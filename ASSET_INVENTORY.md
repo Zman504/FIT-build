@@ -35,6 +35,15 @@ through all of these; the "How it Works" steps reuse `9.jpg`, `3.jpg`, `2.2.jpg`
     public/FIT Ribbon.jpg   (bottom brand ribbon)
     public/FIT Logo.jpg     (standalone logo, design source; not used inline)
 
+## Project reference docs (added at owner's request)
+
+Added so the developer has product/context reference. The owner explicitly
+approved publishing these in the public repo, including the pitch deck's
+confidential stamp and personal contact info.
+
+    public/LifeClock_Presentation.pptx   (19-slide product/pitch deck + UI mockups)
+    public/lifeclock_meal_history.xlsx   (sample meal-history export — no PII)
+
 ## Icons / PWA / legal
 
     public/icons/fit-icon-32.png    (favicon)
@@ -59,9 +68,7 @@ Reorder the `SCREENSHOT_PATHS` array in `PublicLandingPage.tsx` to set the order
 ## Intentionally excluded (not copied — not public-safe or not needed)
 
     patent.pdf                              (proprietary / IP)
-    LifeClock_Presentation.pptx             (internal)
-    lifeclock_meal_history_download.xlsx    (sample data export)
-    lifeclock_meals_history_download.pdf    (sample data export)
+    lifeclock_meals_history_download.pdf    (duplicate of the .xlsx export, in PDF)
     public/app/stripe/**                    (payment/backend bridge)
     FIT Web Page.png, fit-app-logo.png,     (unused by the landing page;
     logo.png, lifeclock_1024.png,            available on request)
