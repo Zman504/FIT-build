@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-50 via-white to-slate-100;
+    @apply text-slate-900;
+  }
+}
+
+@layer utilities {
+  @keyframes spin-top {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(1080deg);
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.3s ease-out;
+  }
+
+  .animate-spin-slow {
+    animation: spin-top 2s ease-in-out;
+  }
+
+  @keyframes water-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.15);
+      opacity: 0.8;
+    }
+  }
+
+  .animate-water-pulse {
+    animation: water-pulse 0.6s ease-in-out 3;
+  }
+
+  @keyframes achievement-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-achievement-fade {
+    animation: achievement-fade 0.45s ease-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-achievement-fade {
+      animation: none;
+    }
+  }
+
+
+	  /* Add this at the end of your existing index.css file */
+
+	/* Barcode scanner styles */
+	body.barcode-scanner-active {
+	  background: transparent !important;
+	}
+
+	body.barcode-scanner-active * {
+	  visibility: hidden;
+	}
+
+	body.barcode-scanner-active ion-app,
+	body.barcode-scanner-active ion-app * {
+	  visibility: visible;
+	}
+}

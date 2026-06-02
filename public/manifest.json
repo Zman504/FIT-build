@@ -1,0 +1,30 @@
+{
+  "name": "F.I.T. - Food Impact Tracker",
+  "short_name": "F.I.T.",
+  "description": "Measure nutrition quality, not just calories",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/fit-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/fit-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "health",
+    "lifestyle",
+    "food"
+  ],
+  "screenshots": []
+}
